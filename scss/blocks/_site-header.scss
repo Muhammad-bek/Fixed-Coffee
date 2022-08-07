@@ -27,6 +27,7 @@
 
     .site-header__image {
         max-width: 200px;
+        
     }
 
     .site-header__burger {
@@ -98,8 +99,20 @@
         width: 328px;
     }
 
+    @keyframes nav-open{
+        0% {
+            transform: translateY(-100%);
+        }
+
+        100% {
+            transform: translateY(0%);
+        }
+        
+    }
+
     .site-header__nav--opened .site-header__nav{
         display: block;
+        animation: 0.5s alternate nav-open;
     }
 
     .site-header__nav {
